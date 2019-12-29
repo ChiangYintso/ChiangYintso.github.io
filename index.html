@@ -61,6 +61,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Docker运行SpringBoot Application" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/12/29/Docker%E8%BF%90%E8%A1%8CSpringBoot%20Application/" class="article-date">
+  <time datetime="2019-12-29T12:35:57.414Z" itemprop="datePublished">2019-12-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/29/Docker%E8%BF%90%E8%A1%8CSpringBoot%20Application/">Docker运行SpringBoot Application</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Docker运行Springboot-Application"><a href="#Docker运行Springboot-Application" class="headerlink" title="Docker运行Springboot Application"></a>Docker运行Springboot Application</h1><p>Created By: Yinzuo Jiang<br>Last Edited: Dec 29, 2019 8:34 PM<br>Tags: DevOps, Docker</p>
+<p><a href="https://github.com/ChiangYintso/springboot-learning1" target="_blank" rel="noopener">ChiangYintso/springboot-learning1</a></p>
+<p><img src="Docker%20Springboot%20Application/Untitled.png" alt="Docker%20Springboot%20Application/Untitled.png"></p>
+<p>将打包后的jar包和DockerFile放在同一目录下。</p>
+<pre><code># From java image, version : 11
+FROM java:latest
+
+# 挂载app目录
+VOLUME /app
+
+# COPY or ADD to image
+ADD app.jar /app/
+
+EXPOSE 8081
+ENTRYPOINT [&quot;java&quot;,  &quot;-Dserver.port=8081&quot;, &quot;-jar&quot;, &quot;/app/app.jar&quot;]</code></pre><p>编写DockerFile</p>
+<p><img src="Docker%20Springboot%20Application/Untitled%201.png" alt="Docker%20Springboot%20Application/Untitled%201.png"></p>
+<p>设置Run Configuration</p>
+<p><img src="Docker%20Springboot%20Application/Untitled%202.png" alt="Docker%20Springboot%20Application/Untitled%202.png"></p>
+<p>设置容器</p>
+<p><img src="Docker%20Springboot%20Application/Untitled%203.png" alt="Docker%20Springboot%20Application/Untitled%203.png"></p>
+<p>运行</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chiangyintso.github.io/2019/12/29/Docker%E8%BF%90%E8%A1%8CSpringBoot%20Application/" data-id="ck4r00d6z0000vsul4skjfd7m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-IDEA使用技巧" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/27/IDEA%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" class="article-date">
@@ -89,7 +146,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chiangyintso.github.io/2019/11/27/IDEA%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" data-id="ck3hbo7k900014cul2km7h4fe" class="article-share-link">Share</a>
+      <a data-url="https://chiangyintso.github.io/2019/11/27/IDEA%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" data-id="ck4r00d7a0001vsul2vme1szg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chiangyintso.github.io/2019/11/26/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck3hbo7jm00004cul3zqlesst" class="article-share-link">Share</a>
+      <a data-url="https://chiangyintso.github.io/2019/11/26/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" data-id="ck4r00d7c0002vsul0mwr60wd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -197,7 +254,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li></ul>
     </div>
   </div>
 
@@ -208,6 +265,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/12/29/Docker%E8%BF%90%E8%A1%8CSpringBoot%20Application/">Docker运行SpringBoot Application</a>
+          </li>
         
           <li>
             <a href="/2019/11/27/IDEA%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/">IDEA使用技巧</a>
