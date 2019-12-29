@@ -6,7 +6,7 @@ Tags: DevOps, Docker
 
 
 
-{% asset_img Docker运行Springboot%20Application/Untitled.png This is an example image %}
+{% asset_img Untitled.png This is an example image %}
 
 将打包后的jar包和DockerFile放在同一目录下。
 
@@ -24,14 +24,14 @@ Tags: DevOps, Docker
 
 编写DockerFile
 
-{% asset_img Docker运行Springboot%20Application/Untitled1.png This is an example image %}
+{% asset_img Untitled1.png This is an example image %}
 
 设置Run Configuration
 
-{% asset_img Docker运行Springboot%20Application/Untitled2.png This is an example image %}
+{% asset_img Untitled2.png This is an example image %}
 
 设置容器
 
-{% asset_img Docker运行Springboot%20Application/Untitled3.png This is an example image %}
+{% asset_img Untitled3.png This is an example image %}
 
 运行
